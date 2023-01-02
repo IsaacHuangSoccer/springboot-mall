@@ -1,5 +1,6 @@
 package com.isaac.springbootmall.service.impl;
 
+import com.isaac.springbootmall.constant.ProductGategory;
 import com.isaac.springbootmall.dao.ProductDao;
 import com.isaac.springbootmall.dto.ProductRequest;
 import com.isaac.springbootmall.model.Product;
@@ -26,7 +27,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<Product> getProducts() {
-        return  productDao.getProducts();
+    public List<Product> getProducts(ProductGategory category, String search) {
+        return  productDao.getProducts(category, search);
     }
 }

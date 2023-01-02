@@ -1,5 +1,6 @@
 package com.isaac.springbootmall.service;
 
+import com.isaac.springbootmall.constant.ProductGategory;
 import com.isaac.springbootmall.dto.ProductRequest;
 import com.isaac.springbootmall.model.Product;
 
@@ -11,5 +12,5 @@ public interface ProductService {
 
     Integer createProduct(ProductRequest productRequest);
 
-    List<Product> getProducts();
+    List<Product> getProducts(ProductGategory category, String search);
 }

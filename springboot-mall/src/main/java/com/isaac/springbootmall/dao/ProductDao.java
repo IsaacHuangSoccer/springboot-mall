@@ -1,5 +1,6 @@
 package com.isaac.springbootmall.dao;
 
+import com.isaac.springbootmall.constant.ProductGategory;
 import com.isaac.springbootmall.dto.ProductRequest;
 import com.isaac.springbootmall.model.Product;
 
@@ -12,5 +13,5 @@ public interface ProductDao {
     Integer createProduct(ProductRequest productRequest);
 
 
-    List<Product> getProducts();
+    List<Product> getProducts(ProductGategory category, String search);
 }
