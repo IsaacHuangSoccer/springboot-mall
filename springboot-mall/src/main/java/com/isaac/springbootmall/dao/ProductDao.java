@@ -13,5 +13,5 @@ public interface ProductDao {
     Integer createProduct(ProductRequest productRequest);
 
 
-    List<Product> getProducts(ProductGategory category, String search);
+    List<Product> getProducts(ProductQueryParams productQueryParams);
 }
